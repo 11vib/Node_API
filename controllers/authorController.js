@@ -1,4 +1,5 @@
 import { AuthorModel } from "../models/authorModel.js";
+import { validationResult } from "express-validator";
 export const register = async(req,res)=>{
     try{
         const errors = validationResult(req);
